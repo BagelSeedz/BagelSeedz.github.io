@@ -5,7 +5,7 @@ import Gifts from "./Gifts";
 class YesModal extends React.Component {
     render() {
         return (
-            <Modal isOpen={this.props.modalOpen}>
+            <Modal isOpen={this.props.modalOpen} fullscreen={true}>
                 <ModalHeader>Yippee!</ModalHeader>
                 <ModalBody><Gifts/></ModalBody>
                 <ModalFooter>

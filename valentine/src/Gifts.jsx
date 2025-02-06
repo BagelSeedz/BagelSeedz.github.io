@@ -2,13 +2,15 @@ import React from 'react'
 import giftImage from './assets/gift.gif'
 import gift1 from './assets/gift1.jpg'
 import gift2 from './assets/gift2.jpeg'
+import gift3 from "./assets/gift3.jpg"
 import partyPopper from "./assets/partypopper.gif"
 import { Button, Container, Row, Col } from 'reactstrap';
 
-const POPPER_IMAGE = <img src={partyPopper} alt='party popper gif' width="200px" height="200px"/>
-const GIFT_IMAGE = <img src={giftImage} alt='gift gif' width="100px" height="100px"/>
-const GIFT1 = <img src={gift1} alt='eyeliner' width="100px" height="100px"/>
-const GIFT2 = <img src={gift2} alt='rose toy' width="100px" height="100px"/>
+const POPPER_IMAGE = <img src={partyPopper} alt='party popper gif' width="100%" height="100%"/>
+const GIFT_IMAGE = <img src={giftImage} alt='gift gif' width="100%" height="100%"/>
+const GIFT1 = <img src={gift1} alt='eyeliner' width="100%" height="100%"/>
+const GIFT2 = <img src={gift2} alt='rose toy' width="100%" height="100%"/>
+const GIFT3 = <img src={gift3} alt='olive garden' width="100%" height="100%"/>
 
 class Gifts extends React.Component {
     constructor(props) {
@@ -49,7 +51,7 @@ class Gifts extends React.Component {
                                 {this.state.giftsOpen[1] ? GIFT2 : GIFT_IMAGE}
                             </Button>
                             <Button onClick={() => this.giftClicked(2)} color="primary" className="p-0 border-0" style={{ background: "none" }}>
-                                {this.state.giftsOpen[2] ? 'food! I will buy you food.' : GIFT_IMAGE}
+                                {this.state.giftsOpen[2] ? GIFT3 : GIFT_IMAGE}
                             </Button>
                         </div>
                     </Col>
