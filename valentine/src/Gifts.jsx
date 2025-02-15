@@ -1,7 +1,7 @@
 import React from 'react'
 import giftImage from './assets/gift.gif'
 import gift1 from './assets/gift1.jpg'
-import gift2 from './assets/gift2.jpeg'
+import gift2 from './assets/gift2.jpg'
 import gift3 from "./assets/gift3.jpg"
 import partyPopper from "./assets/partypopper.gif"
 import { Button, Container, Row, Col } from 'reactstrap';
