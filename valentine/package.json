@@ -9,8 +9,10 @@
     "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-router-dom": "^7.5.0",
     "react-scripts": "5.0.1",
-    "reactstrap": "^9.2.3"
+    "reactstrap": "^9.2.3",
+    "styled-components": "^6.1.17"
   },
   "scripts": {
     "predeploy": "npm run build",

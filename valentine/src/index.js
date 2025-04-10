@@ -2,13 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import Valentine from './pages/Valentine';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Valentine />
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Valentine/>}/>
+        <Route path="/valentine" element={<Valentine/>}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
