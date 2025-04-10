@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import Valentine from './Valentine';
+import Valentine from './pages/Valentine';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 

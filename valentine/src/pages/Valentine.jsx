@@ -1,9 +1,9 @@
 import React from 'react'
-import heartGif from './assets/heart.gif'
-import noGif from './assets/no-emotiguy.gif'
-import './Valentine.css'
+import heartGif from '../assets/heart.gif'
+import noGif from '../assets/no-emotiguy.gif'
+import '../Valentine.css'
 import { Container, Row, Col, Button } from 'reactstrap'
-import YesModal from './YesModal'
+import YesModal from '../YesModal'
 
 const HEART_IMAGE = <img src={heartGif} alt='heart gif' width="100%" height="100%"/>
 const NO_IMAGE = <img src={noGif} alt='no gif' width="500px" height="500px"/>
