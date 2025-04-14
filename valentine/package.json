@@ -2,7 +2,7 @@
   "name": "valentine",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://BagelSeedz.github.io",
+  "homepage": "https://BagelSeedz.github.io/valentine",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
