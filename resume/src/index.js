@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route exact path="/" element={<Valentine/>}/>
+        <Route path="/" element={<Valentine/>}/>
         <Route path="/valentine" element={<Valentine/>}/>
       </Routes>
     </HashRouter>
