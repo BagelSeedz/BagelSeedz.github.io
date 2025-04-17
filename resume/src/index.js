@@ -5,13 +5,14 @@ import Valentine from './pages/Valentine';
 import { Routes, Route, HashRouter } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
+import Home from './pages/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Valentine/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/valentine" element={<Valentine/>}/>
       </Routes>
     </HashRouter>
