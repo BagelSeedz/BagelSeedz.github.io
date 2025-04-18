@@ -1,17 +1,9 @@
 import React, { useRef, useState, useEffect } from "react";
 import galaxy from './assets/galaxy.png'
-import python_icon from "./assets/python.png"
-import java_icon from './assets/java.jpg'
-import cpp_icon from "./assets/cpp.png"
-import c_icon from "./assets/c.png"
-import lua_icon from "./assets/lua.png"
-import javascript_icon from './assets/javascript.png'
-import html_icon from './assets/html.png'
-import css_icon from './assets/css.png'
 import "./Home.css"
 
 const GALAXY = <img alt='galaxy' src={galaxy} width={835} height={735}></img>
-const SPEED = 0.005
+const SPEED = 0.0035
 
 const CircleMover = ({skills = []}) => {
   const buttonRef = useRef(null);
@@ -58,60 +50,23 @@ const CircleMover = ({skills = []}) => {
 };
 
 class Galaxy extends React.Component {
-    render() {
-        return (
-            <>
-                <div className="galaxy">
-                    {GALAXY}
-                    <div className="skills">
-                      <CircleMover skills={[
-                        {
-                          name: 'Python',
-                          image: python_icon,
-                          link: 'https://www.python.org/'
-                        },
-                        {
-                          name: 'Java',
-                          image: java_icon,
-                          link: 'https://www.java.com/'
-                        },
-                        {
-                          name: 'C++',
-                          image: cpp_icon,
-                          link: 'https://en.wikipedia.org/wiki/C++'
-                        },
-                        {
-                          name: 'C',
-                          image: c_icon,
-                          link: 'https://en.wikipedia.org/wiki/C_(programming_language)'
-                        },
-                        {
-                          name: 'Lua',
-                          image: lua_icon,
-                          link: 'https://www.lua.org/'
-                        },
-                        {
-                          name: 'JavaScript',
-                          image: javascript_icon,
-                          link: 'https://en.wikipedia.org/wiki/JavaScript'
-                        },
-                        {
-                          name: 'HTML',
-                          image: html_icon,
-                          link: 'https://en.wikipedia.org/wiki/HTML'
-                        },
-                        {
-                          name: 'CSS',
-                          image: css_icon,
-                          link: 'https://en.wikipedia.org/wiki/CSS'
-                        }
-                      ]}/>
-                    </div>
-                </div>
-                
-            </>
-        );
-    }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {skills: props.skills}
+  // }
+
+  render() {
+    return (
+        <>
+          <div className="galaxy">
+              {GALAXY}
+              <div className="skills">
+                <CircleMover skills={this.props.skills}/>
+              </div>
+          </div>
+        </>
+    );
+  }
 }
 
 export default Galaxy;
