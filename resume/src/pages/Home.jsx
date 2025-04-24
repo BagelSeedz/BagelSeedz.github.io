@@ -11,6 +11,7 @@ import javascript_icon from '../assets/javascript.png'
 import html_icon from '../assets/html.png'
 import css_icon from '../assets/css.png'
 import react_icon from '../assets/react.png'
+import AboutMe from "../AboutMe";
 
 const LANGUAGES = [
     {
@@ -68,12 +69,7 @@ class Home extends React.Component {
         return (
             <>
                 <h1>Welcome to the homepage!</h1>
-                <div className="center">
-                  <div className="box">
-                    box<br/>
-                    box
-                  </div>
-                </div>
+                <AboutMe/>
                 <h2>SKILLS</h2>
                 <h3>Langauges</h3>
                 <Galaxy skills={LANGUAGES}/>
