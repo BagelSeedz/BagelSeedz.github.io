@@ -5,12 +5,16 @@ import me_image from "./assets/me.png"
 class AboutMe extends React.Component {
     render() {
         return (
-            <div className="center">
+            <div className="centerHorizontal">
                 <div className="box">
-                    <img alt='david' src={me_image} width='20%' style={{margin: '10px'}}/>
-                    <div>
-                        <h3>David Martinez</h3>
-                        <h4>my name is david yo</h4>
+                    <div style={{width: '20%', height: '100%'}}>
+                        <img alt='david' src={me_image} width='80%' style={{margin: '10px'}}/>
+                    </div>
+                    <div style={{width:'100%'}}>
+                        <h1>David Martinez</h1>
+                        <h2>Software Engineer</h2>
+                        <h6>Long Island, NY | 🇺🇸</h6>
+                        <h5>Originally self-taught software and game developer studying Software Engineering at RIT.</h5>
                     </div>
                 </div>
           </div>

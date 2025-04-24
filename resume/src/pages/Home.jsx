@@ -68,12 +68,12 @@ class Home extends React.Component {
     render() {
         return (
             <>
-                <h1>Welcome to the homepage!</h1>
+                <h1 className="center title">Welcome to the homepage!</h1>
                 <AboutMe/>
-                <h2>SKILLS</h2>
-                <h3>Langauges</h3>
+                <h2 className="center subsection">SKILLS</h2>
+                <h3 className="small-left-margin">Langauges</h3>
                 <Galaxy skills={LANGUAGES}/>
-                <h3>Technologies</h3>
+                <h3 className="small-left-margin">Technologies</h3>
                 <Galaxy skills={TECH}/>
             </>
         );
