@@ -68,6 +68,12 @@ class Home extends React.Component {
         return (
             <>
                 <h1>Welcome to the homepage!</h1>
+                <div className="center">
+                  <div className="box">
+                    box<br/>
+                    box
+                  </div>
+                </div>
                 <h2>SKILLS</h2>
                 <h3>Langauges</h3>
                 <Galaxy skills={LANGUAGES}/>

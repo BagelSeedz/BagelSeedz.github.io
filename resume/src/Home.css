@@ -31,3 +31,11 @@ h3 {
     position: absolute;
     transform: rotate(-28deg);
 }
+.box {
+    background-color: rgb(68, 68, 68);
+    width: 80%;   
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
