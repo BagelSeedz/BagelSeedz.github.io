@@ -11,6 +11,12 @@ import javascript_icon from '../assets/javascript.png'
 import html_icon from '../assets/html.png'
 import css_icon from '../assets/css.png'
 import react_icon from '../assets/react.png'
+import postgresql_icon from "../assets/postgresql.png"
+import flask_icon from "../assets/flask.png"
+import git_icon from "../assets/git.png"
+import sqlite_icon from "../assets/sqlite.png"
+import trello_icon from "../assets/trello.png"
+import spring_icon from "../assets/spring.jpg"
 import AboutMe from "../AboutMe";
 
 const LANGUAGES = [
@@ -58,9 +64,39 @@ const LANGUAGES = [
 
 const TECH = [
     {
-        name: 'React',
-        image: react_icon,
-        link: 'https://react.dev/'
+      name: 'React',
+      image: react_icon,
+      link: 'https://react.dev/'
+    },
+    {
+      name: 'PostgreSQL',
+      image: postgresql_icon,
+      link: 'https://www.postgresql.org/'
+    },
+    {
+      name: 'Flask',
+      image: flask_icon,
+      link: 'https://en.wikipedia.org/wiki/Flask_(web_framework)'
+    },
+    {
+      name: 'Git',
+      image: git_icon,
+      link: 'https://git-scm.com/'
+    },
+    {
+      name: 'SQLite',
+      image: sqlite_icon,
+      link: 'https://sqlite.org/index.html'
+    },
+    {
+      name: 'Trello',
+      image: trello_icon,
+      link: 'https://trello.com/'
+    },
+    {
+      name: 'Spring',
+      image: spring_icon,
+      link: 'https://spring.io/projects/spring-boot'
     }
 ];
 
