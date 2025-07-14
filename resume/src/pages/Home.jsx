@@ -1,63 +1,48 @@
 import React from "react";
 import '../Home.css'
 import Galaxy from "../Galaxy";
-
-import python_icon from "../assets/python.png"
-import java_icon from '../assets/java.jpg'
-import cpp_icon from "../assets/cpp.png"
-import c_icon from "../assets/c.png"
-import lua_icon from "../assets/lua.png"
-import javascript_icon from '../assets/javascript.png'
-import html_icon from '../assets/html.png'
-import css_icon from '../assets/css.png'
-import react_icon from '../assets/react.png'
-import postgresql_icon from "../assets/postgresql.png"
-import flask_icon from "../assets/flask.png"
-import git_icon from "../assets/git.png"
-import sqlite_icon from "../assets/sqlite.png"
-import trello_icon from "../assets/trello.png"
-import spring_icon from "../assets/spring.jpg"
 import AboutMe from "../AboutMe";
+import HomeNav from "../HomeNav";
 
 const LANGUAGES = [
     {
       name: 'Python',
-      image: python_icon,
+      image: "/assets/python.png",
       link: 'https://www.python.org/'
     },
     {
       name: 'Java',
-      image: java_icon,
+      image: "/assets/java.jpg",
       link: 'https://www.java.com/'
     },
     {
       name: 'C++',
-      image: cpp_icon,
+      image: "/assets/cpp.png",
       link: 'https://en.wikipedia.org/wiki/C++'
     },
     {
       name: 'C',
-      image: c_icon,
+      image: "/assets/c.png",
       link: 'https://en.wikipedia.org/wiki/C_(programming_language)'
     },
     {
       name: 'Lua',
-      image: lua_icon,
+      image: "/assets/lua.png",
       link: 'https://www.lua.org/'
     },
     {
       name: 'JavaScript',
-      image: javascript_icon,
+      image: '/assets/javascript.png',
       link: 'https://en.wikipedia.org/wiki/JavaScript'
     },
     {
       name: 'HTML',
-      image: html_icon,
+      image: '/assets/html.png',
       link: 'https://en.wikipedia.org/wiki/HTML'
     },
     {
       name: 'CSS',
-      image: css_icon,
+      image: '/assets/css.png',
       link: 'https://en.wikipedia.org/wiki/CSS'
     }
 ];
@@ -65,37 +50,37 @@ const LANGUAGES = [
 const TECH = [
     {
       name: 'React',
-      image: react_icon,
+      image: '/assets/react.png',
       link: 'https://react.dev/'
     },
     {
       name: 'PostgreSQL',
-      image: postgresql_icon,
+      image: '/assets/postgresql.png',
       link: 'https://www.postgresql.org/'
     },
     {
       name: 'Flask',
-      image: flask_icon,
+      image: '/assets/flask.png',
       link: 'https://en.wikipedia.org/wiki/Flask_(web_framework)'
     },
     {
       name: 'Git',
-      image: git_icon,
+      image: '/assets/git.png',
       link: 'https://git-scm.com/'
     },
     {
       name: 'SQLite',
-      image: sqlite_icon,
+      image: '/assets/sqlite.png',
       link: 'https://sqlite.org/index.html'
     },
     {
       name: 'Trello',
-      image: trello_icon,
+      image: '/assets/trello.png',
       link: 'https://trello.com/'
     },
     {
       name: 'Spring',
-      image: spring_icon,
+      image: '/assets/spring.jpg',
       link: 'https://spring.io/projects/spring-boot'
     }
 ];
@@ -104,7 +89,9 @@ class Home extends React.Component {
     render() {
         return (
             <>
-                <h1 className="center title">Welcome to the homepage!</h1>
+                <HomeNav active='Home'/>
+                {/* <h1 className=" center title">Welcome to the homepage!</h1> */}
+                <div style={{marginTop: '20px'}}></div>
                 <AboutMe/>
                 <h2 className="center subsection">SKILLS</h2>
                 <h3 className="small-left-margin">Langauges</h3>

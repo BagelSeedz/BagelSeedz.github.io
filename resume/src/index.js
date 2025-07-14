@@ -6,6 +6,7 @@ import { Routes, Route, HashRouter } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Home from './pages/Home';
+import Downloads from './pages/Downloads';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/valentine" element={<Valentine/>}/>
+        <Route path="/downloads" element={<Downloads/>}/>
       </Routes>
     </HashRouter>
   </React.StrictMode>

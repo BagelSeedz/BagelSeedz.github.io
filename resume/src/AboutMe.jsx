@@ -1,14 +1,12 @@
 import React from "react";
 
-import me_image from "./assets/me.png"
-
 class AboutMe extends React.Component {
     render() {
         return (
             <div className="centerHorizontal">
                 <div className="box">
                     <div style={{width: '20%', height: '100%'}}>
-                        <img alt='david' src={me_image} width='80%' style={{margin: '10px'}}/>
+                        <img alt='david' src='/assets/me.png' width='80%' style={{margin: '10px'}}/>
                     </div>
                     <div style={{width:'100%'}}>
                         <h1>David Martinez</h1>

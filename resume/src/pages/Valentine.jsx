@@ -1,12 +1,10 @@
 import React from 'react'
-import heartGif from '../assets/heart.gif'
-import noGif from '../assets/no-emotiguy.gif'
 import '../Valentine.css'
 import { Container, Row, Col, Button } from 'reactstrap'
 import YesModal from '../YesModal'
 
-const HEART_IMAGE = <img src={heartGif} alt='heart gif' width="100%" height="100%"/>
-const NO_IMAGE = <img src={noGif} alt='no gif' width="500px" height="500px"/>
+const HEART_IMAGE = <img src='/assets/heart.gif' alt='heart gif' width="100%" height="100%"/>
+const NO_IMAGE = <img src='/assets/no-emotiguy.gif' alt='no gif' width="500px" height="500px"/>
 
 class Valentine extends React.Component {
     constructor(props) {

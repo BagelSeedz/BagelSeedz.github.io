@@ -1,8 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
-import galaxy from './assets/galaxy.png'
 import "./Home.css"
 
-const GALAXY = <img alt='galaxy' src={galaxy} width={835} height={735}></img>
+const GALAXY = <img alt='galaxy' src='/assets/galaxy.png' width={835} height={735}></img>
 const SPEED = 0.0035
 
 const CircleMover = ({skills = []}) => {
