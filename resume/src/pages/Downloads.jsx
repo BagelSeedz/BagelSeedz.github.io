@@ -7,7 +7,11 @@ class Downloads extends React.Component {
         return (
             <>
                 <HomeNav active='Downloads'/>
-                <a href='/downloads/cowbay/DOB Sort Installer Setup.exe'>Download DOB Sort</a>
+                <ui>
+                    <li>
+                        <a href='/downloads/cowbay/DOB Sort Installer Setup.exe'>Download DOB Sort</a>
+                    </li>
+                </ui>
             </>
         );
     }
