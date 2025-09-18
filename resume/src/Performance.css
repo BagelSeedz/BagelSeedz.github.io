@@ -1,0 +1,33 @@
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: blue;
+} */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.pbox {
+    width: 75%;
+    height: 55%;
+    background-color: rgb(3, 0, 85);
+}
+
+.form-input {
+    width: 25%;
+    margin-left: 38%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+}

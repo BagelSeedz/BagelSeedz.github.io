@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Home from './pages/Home';
 import Downloads from './pages/Downloads';
+import Performance from './pages/Performance';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Route path="/" element={<Home/>}/>
         <Route path="/valentine" element={<Valentine/>}/>
         <Route path="/downloads" element={<Downloads/>}/>
+        <Route path="/performance" element={<Performance/>}/>
       </Routes>
     </HashRouter>
   </React.StrictMode>
