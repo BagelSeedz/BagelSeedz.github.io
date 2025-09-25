@@ -90,7 +90,6 @@ class Home extends React.Component {
         return (
             <>
                 <HomeNav active='Home'/>
-                {/* <h1 className=" center title">Welcome to the homepage!</h1> */}
                 <div style={{marginTop: '20px'}}></div>
                 <AboutMe/>
                 <h2 className="center subsection">SKILLS</h2>

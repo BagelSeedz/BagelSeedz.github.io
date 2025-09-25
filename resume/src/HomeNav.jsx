@@ -13,9 +13,10 @@ class HomeNav extends React.Component {
                 <NavbarBrand href="/">
                     David Martinez
                 </NavbarBrand>
-                <Nav pills>
+                <Nav>
                     <NavItem>
                         <NavLink
+                            className='navLink'
                             active={this.props.active === 'Home'}
                             href='/'
                         >
@@ -24,12 +25,51 @@ class HomeNav extends React.Component {
                     </NavItem>
                     <NavItem>
                         <NavLink
+                            className='navLink'
+                            active={this.props.active === 'Skills'}
+                            href='/'
+                        >
+                            Skills
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink
+                            className='navLink'
+                            active={this.props.active === 'Projects'}
+                            href='/'
+                        >
+                            Projects
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink
+                            className='navLink'
                             active={this.props.active === 'Downloads'}
                             href='#downloads'
                         >
                             Downloads
                         </NavLink>
                     </NavItem>
+                </Nav>
+                <Nav pills>
+                    <NavItem>
+                        <NavLink
+                            className='navLink'
+                            active={this.props.active === 'Home'}
+                            href='/'
+                        >
+                            Home
+                        </NavLink>
+                    </NavItem>
+                    {/* <NavItem>
+                        <NavLink
+                            className='navLink'
+                            active={this.props.active === 'Downloads'}
+                            href='#downloads'
+                        >
+                            Downloads
+                        </NavLink>
+                    </NavItem> */}
                 </Nav>
             </Navbar>
         )
