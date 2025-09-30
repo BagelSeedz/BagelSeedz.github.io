@@ -40,7 +40,7 @@ const CircleMover = ({skills = []}) => {
                 border: 'none'
               }}
             >
-              <img alt={data.name} src={data.image} width={50} height={50}/>
+              <img alt={data.name} src={data.image} width={35} height={35}/>
             </button>
           </a>
         ))}

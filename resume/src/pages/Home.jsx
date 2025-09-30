@@ -1,6 +1,5 @@
 import React from "react";
 import '../Home.css'
-import Galaxy from "../Galaxy";
 import AboutMe from "../AboutMe";
 import HomeNav from "../HomeNav";
 
@@ -12,7 +11,7 @@ const LANGUAGES = [
     },
     {
       name: 'Java',
-      image: "/assets/java.jpg",
+      image: "/assets/logo-java-4096.png",
       link: 'https://www.java.com/'
     },
     {
@@ -86,15 +85,14 @@ const TECH = [
 ];
 
 class Home extends React.Component {
-    render() {
-        return (
-            <>
-                <HomeNav active='Home'/>
-                <div style={{marginTop: '20px'}}></div>
-                <AboutMe/>
-            </>
-        );
-    }
+  render() {
+      return (
+          <>
+              <HomeNav active='Home'/>
+              <AboutMe skills={LANGUAGES.concat(TECH)}/>
+          </>
+      );
+  }
 }
 
 export default Home;
