@@ -92,11 +92,6 @@ class Home extends React.Component {
                 <HomeNav active='Home'/>
                 <div style={{marginTop: '20px'}}></div>
                 <AboutMe/>
-                <h2 className="center subsection">SKILLS</h2>
-                <h3 className="small-left-margin">Langauges</h3>
-                <Galaxy skills={LANGUAGES}/>
-                <h3 className="small-left-margin">Technologies</h3>
-                <Galaxy skills={TECH}/>
             </>
         );
     }

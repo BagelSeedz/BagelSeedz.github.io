@@ -82,6 +82,13 @@ ul li a {
 .nav-items {
     display: flex;
 }
+.navbar {
+    position: sticky;
+    top: 0;           /* stick to the top */
+    z-index: 1000;    /* keep it above other content */
+    background-color: #333; /* optional: needed if navbar is transparent */
+}
+
 
 @media (max-width: 600px) {
     .navbarToggler {

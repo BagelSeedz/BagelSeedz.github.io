@@ -21,7 +21,7 @@ class HomeNav extends React.Component {
     render() {
         return (
             <Navbar
-                className="my-2"
+                className="navbar"
                 color="dark"
                 dark
             >
