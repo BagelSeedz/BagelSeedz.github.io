@@ -2,6 +2,7 @@ import React from "react";
 import '../Home.css'
 import AboutMe from "../AboutMe";
 import HomeNav from "../HomeNav";
+import { Alert } from "reactstrap"
 
 const LANGUAGES = [
     {
@@ -89,7 +90,10 @@ class Home extends React.Component {
       return (
           <>
               <HomeNav active='Home'/>
-              <AboutMe skills={LANGUAGES.concat(TECH)}/>
+              <Alert color='warning'>
+                Website Under Construction
+              </Alert>
+              <AboutMe skills={LANGUAGES}/>
           </>
       );
   }
