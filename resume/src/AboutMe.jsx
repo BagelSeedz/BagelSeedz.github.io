@@ -1,11 +1,12 @@
 import React from "react";
 import Galaxy from "./Galaxy"
+import { Button } from 'reactstrap'
 
 class AboutMe extends React.Component {
     render() {
         return (
-            <div className='center about-me' style={{height: "90vh"}}>
-                <div className='center' style={{width: '35%'}}>
+            <div className='about-me' style={{height: "90vh"}}>
+                <div className='center about-me-text'>
                     <div>
                         <h1>David Martinez</h1>
                         <h2>Software Engineer</h2>
@@ -15,13 +16,17 @@ class AboutMe extends React.Component {
                         <p>
                             I am a third year software engineering major at the Rochester Institute of Technology. 
                             I create efficient solutions for clients as an <strong>independent software contractor. </strong> 
-                            I am a passionate problem solver, game developer, and guitar enthusiast.
+                            I am passionate about delivering quality software products to businesses and individuals.  
                         </p>
-                        <a style={{textDecoration: 'none'}} href='mailto:dam9187@rit.edu'>Contact Me</a>
+                        <a href='mailto:dam9187@rit.edu'>
+                            <Button color='primary'>
+                                Contact Me
+                            </Button>
+                        </a>                      
                     </div>
                 </div>
-                <di style={{width: '5%'}}v/>
-                <div className='center' style={{width: '35%'}}>
+                <div style={{width: '5%'}}/>
+                <div className='galaxy-div'>
                     <Galaxy skills={this.props.skills}/>
                 </div>
             </div>            
