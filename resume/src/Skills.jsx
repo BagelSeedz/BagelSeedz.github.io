@@ -1,32 +1,23 @@
 import React from 'react'
-import { Container, Row, Col } from 'reactstrap'
 
 class Skills extends React.Component {
     render() {
         return (
             <div className='center skills' id="skills">
-                <Container>
-                    <Row>
-                        <Col>
-                            <h2 style={{textAlign: 'center'}}>Skills</h2>
-                        </Col>
-                    </Row>
-                    <Row className='centerHorizontal justify-content-around'>
+                <div>
+                    <h2 style={{textAlign: 'center', marginBottom: '70px'}}>Skills</h2>
+                    <div className='grid-row'>
                         {this.props.languages.map((data, index) => (
                             <Skill data={data} key={index}/>
                         ))}
-                    </Row>
-                    <Row>
-                        <Col className='center'>
-                            <div style={{height: '5px', width: '100%', backgroundColor: 'rgba(44, 44, 44, 1)', margin: '30px'}}/>
-                        </Col>
-                    </Row>
-                    <Row className='centerHorizontal justify-content-around'>
+                    </div>
+                    <div style={{height: '5px', width: '100%', backgroundColor: 'rgba(44, 44, 44, 1)', margin: '35px'}}/>
+                    <div className='grid-row'>
                         {this.props.tech.map((data, index) => (
                             <Skill data={data} key={index}/>
                         ))}
-                    </Row>
-                </Container>
+                    </div>
+                </div>
             </div>
         )
     }
@@ -35,12 +26,12 @@ class Skills extends React.Component {
 class Skill extends React.Component {
     render() {
         return (
-            <Col xs='3' md='1'>
-                <h4 style={{width: '100%', textAlign: 'center'}}>{this.props.data.name}</h4>
+            <div className='grid-item'>
                 <a href={this.props.data.link}>
-                    <img style={{width: '100%'}} alt={this.props.data.name} src={this.props.data.image}/>
+                    <img alt={this.props.data.name} src={this.props.data.image}/>
                 </a>
-            </Col>
+                <h5>{this.props.data.name}</h5>
+            </div>
         );
     }
 }

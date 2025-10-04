@@ -98,10 +98,6 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://wallpaperaccess.com/full/823503.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
     height: 400px;
     color: white;
@@ -115,7 +111,37 @@ ul li a {
     display: block;
 }
 .skills {
-    height: 90vh
+    width: 80%;
+    margin-left: 10%;
+}
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-image: url('https://wallpaperaccess.com/full/823503.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: opacity;
+}
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;          /* allow items to wrap to new rows */
+  justify-content: center;  /* center items in each row */
+  gap: 50px 75px;           /* row-gap column-gap */
+}
+
+.grid-item {
+  width: 75px;              /* fixed size for items */
+  text-align: center;
+}
+.grid-item img {
+  max-width: 75px;
+  max-height: 75px;
+  display: block;
 }
 
 
@@ -131,10 +157,6 @@ ul li a {
     }
     .about-me {
         display: inline-block;
-        background-image: url('https://wallpaperaccess.com/full/823503.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         width: 100%;
         height: 400px;
         color: white;
@@ -146,7 +168,7 @@ ul li a {
     .galaxy {
         display: none;
     }
-    .skills {
+    /* .skills {
         height: 130vh
-    }
+    } */
 }

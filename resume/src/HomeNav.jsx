@@ -49,6 +49,7 @@ class HomeNav extends React.Component {
                         <NavLink
                             className='navLink'
                             active={this.props.active === 'Projects'}
+                            href='#projects'
                         >
                             <h4>Projects</h4>
                         </NavLink>
@@ -67,9 +68,9 @@ class HomeNav extends React.Component {
                     <OffcanvasHeader toggle={this.toggleCanvas}></OffcanvasHeader>
                     <OffcanvasBody className='center'>
                         <ul>
-                            <li className='offcanvas-li'><a href="/"><h1>Home</h1></a></li>
-                            <li className='offcanvas-li'><a href="/"><h1>Skills</h1></a></li>
-                            <li className='offcanvas-li'><a href="/"><h1>Projects</h1></a></li>
+                            <li className='offcanvas-li'><a href="#home"><h1>Home</h1></a></li>
+                            <li className='offcanvas-li'><a href="#skills"><h1>Skills</h1></a></li>
+                            <li className='offcanvas-li'><a href="#projects"><h1>Projects</h1></a></li>
                             <Socials/>
                         </ul>
                     </OffcanvasBody>
