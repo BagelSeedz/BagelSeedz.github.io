@@ -94,8 +94,8 @@ class Home extends React.Component {
               <Alert color='warning'>
                 Website Under Construction
               </Alert>
-              <AboutMe skills={LANGUAGES} id='home'/>
-              <Skills languages={LANGUAGES} tech={TECH} id="skills"/>
+              <AboutMe skills={LANGUAGES}/>
+              <Skills languages={LANGUAGES} tech={TECH}/>
           </>
       );
   }

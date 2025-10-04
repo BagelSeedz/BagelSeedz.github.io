@@ -5,7 +5,7 @@ import { Button } from 'reactstrap'
 class AboutMe extends React.Component {
     render() {
         return (
-            <div className='about-me' style={{height: "90vh"}}>
+            <div className='about-me' style={{height: "90vh"}} id="home">
                 <div className='center about-me-text'>
                     <div>
                         <h1>David Martinez</h1>

@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap'
 class Skills extends React.Component {
     render() {
         return (
-            <div className='center skills'>
+            <div className='center skills' id="skills">
                 <Container>
                     <Row>
                         <Col>

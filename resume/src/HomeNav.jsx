@@ -31,7 +31,7 @@ class HomeNav extends React.Component {
                         <NavLink
                             className='navLink'
                             active={this.props.active === 'Home'}
-                            href='/'
+                            href='#home'  
                         >
                             <h4>Home</h4>
                         </NavLink>
@@ -40,7 +40,7 @@ class HomeNav extends React.Component {
                         <NavLink
                             className='navLink'
                             active={this.props.active === 'Skills'}
-                            href='/'
+                            href='#skills' 
                         >
                             <h4>Skills</h4>
                         </NavLink>
@@ -49,7 +49,6 @@ class HomeNav extends React.Component {
                         <NavLink
                             className='navLink'
                             active={this.props.active === 'Projects'}
-                            href='/'
                         >
                             <h4>Projects</h4>
                         </NavLink>
