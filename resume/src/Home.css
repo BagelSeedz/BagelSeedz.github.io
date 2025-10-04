@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 p {
     font-size: 18px;
 }
@@ -19,7 +22,7 @@ ul li a {
     margin-bottom: -100px;
     transform: rotate(5deg);
 }
-.skills {
+.galaxy-skills {
     position: absolute;
     transform: rotate(-28deg);
 }
@@ -111,6 +114,9 @@ ul li a {
     width: 35%;
     display: block;
 }
+.skills {
+    height: 90vh
+}
 
 
 @media (max-width: 850px) {
@@ -139,5 +145,8 @@ ul li a {
     }
     .galaxy {
         display: none;
+    }
+    .skills {
+        height: 130vh
     }
 }

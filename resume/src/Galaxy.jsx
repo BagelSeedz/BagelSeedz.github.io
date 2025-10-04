@@ -49,17 +49,12 @@ const CircleMover = ({skills = []}) => {
 };
 
 class Galaxy extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {skills: props.skills}
-  // }
-
   render() {
     return (
         <>
           <div className="galaxy">
               {GALAXY}
-              <div className="skills">
+              <div className="galaxy-skills">
                 <CircleMover skills={this.props.skills}/>
               </div>
           </div>
