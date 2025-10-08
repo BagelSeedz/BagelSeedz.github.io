@@ -3,15 +3,15 @@ import React from 'react'
 class Skills extends React.Component {
     render() {
         return (
-            <div className='center skills' id="skills">
+            <div className='center skills'>
                 <div>
-                    <h2 style={{textAlign: 'center', marginBottom: '70px'}}>Skills</h2>
+                    <h2 style={{textAlign: 'center', marginBottom: '50px'}} id="skills">Skills</h2>
                     <div className='grid-row'>
                         {this.props.languages.map((data, index) => (
                             <Skill data={data} key={index}/>
                         ))}
                     </div>
-                    <div style={{height: '5px', width: '100%', backgroundColor: 'rgba(44, 44, 44, 1)', margin: '35px'}}/>
+                    <div style={{height: '5px', width: '100%', backgroundColor: 'rgba(44, 44, 44, 1)', marginTop: '35px', marginBottom: '35px'}}/>
                     <div className='grid-row'>
                         {this.props.tech.map((data, index) => (
                             <Skill data={data} key={index}/>

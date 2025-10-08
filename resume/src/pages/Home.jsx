@@ -4,6 +4,7 @@ import AboutMe from "../AboutMe";
 import HomeNav from "../HomeNav";
 import { Alert } from "reactstrap"
 import Skills from "../Skills";
+import Projects from "../Projects";
 
 const LANGUAGES = [
     {
@@ -146,7 +147,7 @@ class Home extends React.Component {
 
   handleScroll() {
     const scrollY = window.scrollY;
-    const fadeDistance = 700; // distance over which to fade out
+    const fadeDistance = 600; // distance over which to fade out
     const newOpacity = Math.max(1 - scrollY / fadeDistance, 0);
     this.setState({ opacity: newOpacity });
   }
@@ -162,6 +163,7 @@ class Home extends React.Component {
         <Alert color='warning'>Website Under Construction</Alert>
         <AboutMe skills={LANGUAGES} />
         <Skills languages={LANGUAGES} tech={TECH} />
+        <Projects/>
       </>
     );
   }

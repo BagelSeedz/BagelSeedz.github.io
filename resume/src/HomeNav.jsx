@@ -68,9 +68,9 @@ class HomeNav extends React.Component {
                     <OffcanvasHeader toggle={this.toggleCanvas}></OffcanvasHeader>
                     <OffcanvasBody className='center'>
                         <ul>
-                            <li className='offcanvas-li'><a href="#home"><h1>Home</h1></a></li>
-                            <li className='offcanvas-li'><a href="#skills"><h1>Skills</h1></a></li>
-                            <li className='offcanvas-li'><a href="#projects"><h1>Projects</h1></a></li>
+                            <li className='offcanvas-li'><a href="#home" onClick={this.toggleCanvas}><h1>Home</h1></a></li>
+                            <li className='offcanvas-li'><a href="#skills" onClick={this.toggleCanvas}><h1>Skills</h1></a></li>
+                            <li className='offcanvas-li'><a href="#projects" onClick={this.toggleCanvas}><h1>Projects</h1></a></li>
                             <Socials/>
                         </ul>
                     </OffcanvasBody>
