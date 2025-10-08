@@ -160,7 +160,7 @@ class Home extends React.Component {
           style={{ opacity: this.state.opacity }}
         />
         <HomeNav active="Home" />
-        <Alert color='warning'>Website Under Construction</Alert>
+        {/* <Alert color='warning'>Website Under Construction</Alert> */}
         <AboutMe skills={LANGUAGES} />
         <Skills languages={LANGUAGES} tech={TECH} />
         <Projects/>
