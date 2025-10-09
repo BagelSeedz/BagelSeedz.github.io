@@ -2,7 +2,6 @@ import React from "react";
 import '../Home.css'
 import AboutMe from "../AboutMe";
 import HomeNav from "../HomeNav";
-import { Alert } from "reactstrap"
 import Skills from "../Skills";
 import Projects from "../Projects";
 
@@ -164,6 +163,7 @@ class Home extends React.Component {
         <AboutMe skills={LANGUAGES} />
         <Skills languages={LANGUAGES} tech={TECH} />
         <Projects/>
+        <footer style={{textAlign: 'center'}}>© 2025 Made by David Martinez</footer>
       </>
     );
   }
