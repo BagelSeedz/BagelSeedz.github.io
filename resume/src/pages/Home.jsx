@@ -17,6 +17,11 @@ const LANGUAGES = [
       link: 'https://www.java.com/'
     },
     {
+      name: 'C#',
+      image: "/assets/c-sharp.png",
+      link: 'https://en.wikipedia.org/wiki/C_Sharp_(programming_language)'
+    },
+    {
       name: 'C++',
       image: "/assets/cpp.png",
       link: 'https://en.wikipedia.org/wiki/C++'
@@ -36,28 +41,28 @@ const LANGUAGES = [
       image: '/assets/javascript.png',
       link: 'https://en.wikipedia.org/wiki/JavaScript'
     },
-    {
-      name: 'HTML',
-      image: '/assets/html.png',
-      link: 'https://en.wikipedia.org/wiki/HTML'
-    },
-    {
-      name: 'CSS',
-      image: '/assets/css.png',
-      link: 'https://en.wikipedia.org/wiki/CSS'
-    }
 ];
 
 const TECH = [
+    {
+      name: 'Git',
+      image: '/assets/git.png',
+      link: 'https://git-scm.com/'
+    },
     {
       name: 'React',
       image: '/assets/react.png',
       link: 'https://react.dev/'
     },
     {
-      name: 'PostgreSQL',
-      image: '/assets/postgresql.png',
-      link: 'https://www.postgresql.org/'
+      name: '.NET',
+      image: '/assets/dotnet.png',
+      link: 'https://dotnet.microsoft.com/'
+    },
+    {
+      name: 'Django',
+      image: '/assets/django.png',
+      link: 'https://www.djangoproject.com/'
     },
     {
       name: 'Flask',
@@ -65,9 +70,14 @@ const TECH = [
       link: 'https://en.wikipedia.org/wiki/Flask_(web_framework)'
     },
     {
-      name: 'Git',
-      image: '/assets/git.png',
-      link: 'https://git-scm.com/'
+      name: 'Spring',
+      image: '/assets/spring.jpg',
+      link: 'https://spring.io/projects/spring-boot'
+    },
+    {
+      name: 'PostgreSQL',
+      image: '/assets/postgresql.png',
+      link: 'https://www.postgresql.org/'
     },
     {
       name: 'SQLite',
@@ -75,19 +85,14 @@ const TECH = [
       link: 'https://sqlite.org/index.html'
     },
     {
-      name: 'Trello',
-      image: '/assets/trello.png',
-      link: 'https://trello.com/'
-    },
-    {
-      name: 'Spring',
-      image: '/assets/spring.jpg',
-      link: 'https://spring.io/projects/spring-boot'
-    },
-    {
       name: 'Heroku',
       image: '/assets/heroku.png',
       link: 'https://www.heroku.com/'
+    },
+    {
+      name: 'Vercel',
+      image: '/assets/vercel.png',
+      link: 'https://vercel.com/'
     },
     {
       name: 'JavaFX',
@@ -100,14 +105,19 @@ const TECH = [
       link: 'https://matplotlib.org/'
     },
     {
-      name: 'Arduino',
-      image: '/assets/arduino.png',
-      link: 'https://www.arduino.cc/'
-    },
-    {
       name: 'Postman',
       image: '/assets/postman.png',
       link: 'https://www.postman.com/'
+    },
+    {
+      name: 'Trello',
+      image: '/assets/trello.png',
+      link: 'https://trello.com/'
+    },
+    {
+      name: 'Arduino',
+      image: '/assets/arduino.png',
+      link: 'https://www.arduino.cc/'
     },
     {
       name: 'Raspberry',
